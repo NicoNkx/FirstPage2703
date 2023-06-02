@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Respuestas</title>
+    <style>
+        a {
+            display: block;
+            width: 65px;   
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            border-radius: 10px;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: #1d2276;
+            background-color: rgb(101, 239, 228);
+        }
+        a:hover{
+            background-color: transparent;
+            border: 2px solid #07d4a4;
+            color: #07d4a4;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <a href="/Tarea appweb/menu.html" >Menu Principal</a>
+    </div>
+    <h1>Datos del formulario:</h1>
+
+    <h3>Destino:</h3>
+    <p>{{destino}}</p>
+
+    <h3>Asunto:</h3>
+    <p>{{asunto}}</p>
+
+    <h3>Texto:</h3>
+    <p>{{texto}}</p>
+
+    <script>
+     
+        const params = new URLSearchParams(window.location.search);
+
+    
+        const destino = params.get('destino1');
+        const asunto = params.get('asunto');
+        const texto = params.get('texto');
+
+        document.querySelector('h1').innerHTML = 'Datos del formulario:';
+        document.querySelector('h3:nth-of-type(1) + p').innerHTML = destino;
+        document.querySelector('h3:nth-of-type(2) + p').innerHTML = asunto;
+        document.querySelector('h3:nth-of-type(3) + p').innerHTML = texto;
+    </script>
+</body>
+</html>

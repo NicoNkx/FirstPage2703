@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="j.css">
+    <style>
+        a {
+            display: block;
+            width: 80px;   
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            border-radius: 10px;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: #d550a4;
+            background-color: rgb(233, 169, 208);
+        }
+        a:hover{
+            background-color: transparent;
+            border: 2px solid #d550a4;
+            color: #d550a4;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <a href="/Tarea appweb/menu.html" >Menu Principal</a>
+    </div>
+    <form action="respuestas.html" class="formulario" method="get" target="_blank">
+        <h2 class="text-center text-primary">Formulario</h2>
+        <input type="text" class="formulario__input" name="destino1">
+        <label for="" class="formulario__label">Destino</label>
+        <input type="text" class="formulario__input" name="asunto">
+        <label for="" class="formulario__label">Asunto</label>
+        <textarea class="formulario__input" name="texto"></textarea>
+        <label for="" class="formulario__label">Mensaje</label>
+        <input type="submit" class="formulario__submit" value="Enviar">
+    </form>
+    <script src="jj.js"></script>
+</body>
+</html>

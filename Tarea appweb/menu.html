@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú De Navegación</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Cerrar &times;</button>
+        <a href="Calculadora/index.html" class="w3-bar-item w3-button">Calculadora</a>
+        <a href="Tic Tac Toe/Individual/index.html" class="w3-bar-item w3-button">3 En raya grupal</a>
+        <a href="Tic Tac Toe/Grupo/index.html" class="w3-bar-item w3-button">3 En raya individual</a>
+        <a href="Mensaje/PRINCIPAL.html" class="w3-bar-item w3-button">formulario</a>
+        <a href="Mensaje/respuestas.html" class="w3-bar-item w3-button">Rta formulario</a>
+    </div>
+    <div id="main">
+    <div class="w3-teal">
+        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+        <h1>Proyecto VIIS 2703</h1>
+        <h3>Primer actividad</h3>
+        </div>
+    </div>
+    <img src="img/rbtswarm.jpg" alt="Robot Swarm" style="width:50%">
+    <div class="w3-container">
+    <p>Pagina desarrollada por estudiantes de la Udenar</p>
+    <p>Ingenieria electronica quinto semestre</p>
+    <p>Manuela Muriel, Nicolas Narvaez, Jonathan Diaz.</p>
+    </div>
+    
+    </div>
+    <script>
+    function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+    }
+    </script>
+    
+
+</body>
+</html>
